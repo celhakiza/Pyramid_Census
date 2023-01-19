@@ -59,7 +59,8 @@ def line(line_input):
                       yaxis_title='Total Population',
                       title='Population across year',
                       title_font_size=24,
-                      title_font_color='blue')
+                      title_font_color='blue',
+                      plot_bgcolor='cornsilk')
     return fig
 @app.callback(
     Output('graph-pyr','figure'),
@@ -146,13 +147,6 @@ def pyramid(slctd_year):
         )
 
         return fig
-
-
-
-
-
-
-
 
 
 server=app.server
