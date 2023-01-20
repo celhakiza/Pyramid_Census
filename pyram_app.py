@@ -24,8 +24,12 @@ app.layout=dbc.Container(
                 dbc.Col(
                     html.H2('Population Pyramid Projection')
 
-                ,className="text-center text-primary mb-4 font-weight-bold",width=12),
-                dcc.Markdown('![Image](https://pbs.twimg.com/profile_images/1115228529812287489/5ciAZeIe_200x200.png)') #add image of NISR
+                ,className="text-center text-primary mb-4 font-weight-bold",width=10),
+                dbc.Col(
+                    dcc.Markdown('![Image](https://pbs.twimg.com/profile_images/1115228529812287489/5ciAZeIe_200x200.png)') #insert nisr logo
+                ,width=2)
+
+
             ]
         ),
 
