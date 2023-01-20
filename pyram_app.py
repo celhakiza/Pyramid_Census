@@ -24,7 +24,8 @@ app.layout=dbc.Container(
                 dbc.Col(
                     html.H2('Population Pyramid Projection')
 
-                ,className="text-center text-primary mb-4 font-weight-bold",width=12)
+                ,className="text-center text-primary mb-4 font-weight-bold",width=12),
+                dcc.Markdown('![Image](https://pbs.twimg.com/profile_images/1115228529812287489/5ciAZeIe_200x200.png)')
             ]
         ),
 
@@ -33,12 +34,16 @@ app.layout=dbc.Container(
                 dbc.Col(
                     [
                         dcc.Slider(id='line-input'),
-                        dcc.Graph(id='line-trend',figure={})
+                        dcc.Graph(id='line-trend',figure={}),
+                        dcc.Markdown('*N.B: Hover on line chart to generate corresponding pyramid*'), #to format in italic
+                        dcc.Markdown(' *for more info click on link to get NISR website: [Link] (https://www.statistics.gov.rw)*') #to get link
                     ]
                 ,width=5),
                 dbc.Col(
                     [
-                        dcc.Graph(id='graph-pyr',figure={})
+                        dcc.Graph(id='graph-pyr',figure={}),
+                        dcc.Markdown('*This is population pyramid projection from Rwanda '
+                                     'Population and Housing Census 2012*')
                     ]
                 ,width=7)
             ]
