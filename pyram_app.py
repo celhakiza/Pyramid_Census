@@ -40,7 +40,7 @@ app.layout=dbc.Container(
                         dcc.Slider(id='line-input'),
                         dcc.Graph(id='line-trend',figure={}),
                         dcc.Markdown('*N.B: Hover on line chart to generate corresponding pyramid*'), #to format in italic
-                        dcc.Markdown(' *for more info click on link to get NISR website: [Link] (https://www.statistics.gov.rw)*') #to get link
+                        dcc.Markdown('*for more info click on link to get NISR website [Link]: https://www.statistics.gov.rw*') #to get link of NISR and more info
                     ]
                 ,width=5),
                 dbc.Col(
